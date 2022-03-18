@@ -1,0 +1,81 @@
+
+
+@media (min-width: 768px) {
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 1       2        3    Tengo dos columnas rodeadas de 1-2 y de 2-3 entonces le pido que se ubique entre 2-3 */
+@media (min-width: 768px) {
+    .contenido{
+        grid-column: 2 / 3;
+    }
+}
+
+.texto{
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.enlace {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--blanco);
+    border: 2px solid var(--primary);
+    padding: 1rem 5rem;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+.enlace:hover {
+    background-color: var(--primary);
+    color: var(--blanco);
+}
+
+.texto{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    margin-top: 0;
+}
+
+.entrada{
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.contenido-curso {
+    padding: 2rem;
+
+}
+
+.contenido-curso h3{
+    font-weight: 400;
+    font-size: 2.8rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.fecha {
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+
+.texto-curso {
+    white-space: pre-wrap;
+}
