@@ -1,5 +1,3 @@
-Pagina web en Vercel: https://guitar-la-next-nicolasgomez2093.vercel.app/
-
 # GUITAR LA
 Deployment proyecto Guitar LA con NextJS, Strapi, MongoDB
 
